@@ -14,5 +14,8 @@ fs.readFile(`${__dirname}/dog.txt`, 'utf8', (err, data) => {
         if (err) return console.log(err.message);
         console.log('Random dog image saved to file!');
       });
+    })
+    .catch((err) => {
+      console.log(err.message);
     });
 });
