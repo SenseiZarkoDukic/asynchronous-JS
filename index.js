@@ -10,6 +10,8 @@ const readFilePro = (file) => {
   });
 };
 
+fs.readFilePro(`${__dirname}/dog.txt`);
+
 fs.readFile(`${__dirname}/dog.txt`, 'utf8', (err, data) => {
   console.log(`Breed: ${data}`);
 
