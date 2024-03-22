@@ -26,6 +26,7 @@ const getDogPic = async () => {
   const res = await superagent.get(
     `https://dog.ceo/api/breed/${data}/images/random`
   );
+  console.log(res.body.message);
 
   await writeFilePro('dog-img.txt', res.body.message);
 
